@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> websit</title>
 
-    <!--    </-----link font-awesome------>-->
-    <link rel="stylesheet" href="font/all.css">
+    <!--    </-----link font-awesome------>
+    <link rel="stylesheet" href="font/css/all.min.css">
 
-    <!--    </---- link css file ------>-->
+    <!--    </---- link css file ------>
     <link rel="stylesheet" href="style.css">
 
     <!----------------google fonts---------------->
@@ -25,102 +25,135 @@
 
     <!--------------header------------------->
     <section class="header">
-        <figure>
-            <img src="images/logo.png" alt="image">
-        </figure>
-        <ul class="nav">
-            <li>home</li>
-            <li>feature</li>
-            <li>about us</li>
-            <li>service</li>
-            <li>portfolio</li>
-            <li>blog</li>
-            <li>contact us</li>
-            <li><i class="fas fa-search"></i></li>
-            <li><i class="fas fa-dumpster-fire color"></i></li>
-        </ul>
-        <i class="fas fa-bars fa-3x none"></i>
+        <div class="container container-item">
+            <a href="javascript:void(0)">
+                <img src="images/logo.png" alt="image">
+            </a>
+            <button class="btn-hem"><i class="fas fa-bars"></i></button>
+            <div class="header-item" id="headerLinks">
+                <ul class="nav">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#feature">feature</a></li>
+                    <li><a href="#aboutUs">about us</a></li>
+                    <li><a href="#service">service</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="javascript:void(0)">contact us</a></li>
+                </ul>
+                <ul class="header-search">
+                    <li><a href="javascript:void(0)" class="header-search-heading"><i class="fas fa-search"></i></a></li>
+                    <li><input type="text" placeholder="Search here..." class="search-any"></li>
+                    <li><a href="javascript:void(0)" class="header-books"><i class="fas fa-dumpster-fire"></i></a></li>
+                    <li>
+                        <div class="books-items">
+                            <h2 class="books-heading">Reading books</h2>
+                            <ul>
+                                <li><a href="javascript:void(0)">Data Science</a></li>
+                                <li><a href="javascript:void(0)">Angular</a></li>
+                                <li><a href="javascript:void(0)">Python</a></li>
+                                <li><a href="javascript:void(0)">Javascript</a></li>
+                                <li><a href="javascript:void(0)">HTML Developement</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
 
     <!---------------------------main--------------------------->
-    <section class="main">
-        <div class="main-left">
-            <h1>Sofbox is the Best Software Landing Website Ever.</h1>
-            <p>There are many varition of passage of Lorem ipsum aviable,<br /> but the majority have suffered
-                alteration in some form,
-                <button type="button">Read More</button>
-            </p>
-        </div>
-        <div class="main-right">
-            <img src="images/img2.png">
+    <section class="main" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="main-left">
+                    <h1>Sofbox is the Best Software Landing Website Ever.</h1>
+                    <p>There are many varition of passage of Lorem ipsum aviable,<br /> but the majority have suffered
+                        alteration in some form,
+                    </p>
+                    <button type="button">Read More</button>
+                </div>
+                <div class="main-right">
+                    <img src="images/img2.png">
+                </div>
+            </div>
         </div>
     </section>
 
 
     <!--------------------------feature--------------------------->
-    <section class="feature">
-        <h1>popular features</h1>
-        <p>It is a long established fact that a reader will be distracted by the readable<br /> content of a page when
-            looking at its layout.</p>
+    <section class="popular-features" id="feature">
+        <div class="container">
+            <div class="main-feature">
+                <div class="feature">
+                    <h1>popular features</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable<br /> content of a
+                        page when
+                        looking at its layout.</p>
+                </div>
+                <div class="management">
+                    <div class="manage">
+                        <i class="fas fa-ambulance"></i>
+                        <p>stock management system</p>
+                    </div>
+                    <div class="manage">
+                        <i class="fab fa-paypal"></i>
+                        <p>recivebles & payables</p>
+                    </div>
+                    <div class="manage">
+                        <i class="fab fa-sellsy"></i>
+                        <p>manage buying & selling</p>
+                    </div>
+                    <div class="manage">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <p>messege notification</p>
+                    </div>
+                    <div class="manage">
+                        <i class="far fa-id-card"></i>
+                        <p>powerful & secure backup</p>
+                    </div>
+                    <div class="manage">
+                        <i class="fas fa-vihara"></i>
+                        <p>product management</p>
+                    </div>
+                    <div class="manage">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <p>customized pricing system</p>
+                    </div>
+                    <div class="manage">
+                        <i class="fas fa-poll"></i>
+                        <p>faster return system</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="management">
-        <div class="manage">
-            <i class="fas fa-ambulance fa-3x"></i>
-            <p>stock management system</p>
-        </div>
-        <div class="manage">
-            <i class="fab fa-paypal fa-3x"></i>
-            <p>recivebles & payables</p>
-        </div>
-        <div class="manage">
-            <i class="fab fa-sellsy fa-3x"></i>
-            <p>manage buying & selling</p>
-        </div>
-        <div class="manage">
-            <i class="fas fa-envelope-open-text fa-3x"></i>
-            <p>messege notification</p>
-        </div>
-        <div class="manage">
-            <i class="far fa-id-card fa-3x"></i>
-            <p>powerful & secure backup</p>
-        </div>
-        <div class="manage">
-            <i class="fas fa-vihara fa-3x"></i>
-            <p>product management</p>
-        </div>
-        <div class="manage">
-            <i class="fas fa-hand-holding-usd fa-3x"></i>
-            <p>customized pricing system</p>
-        </div>
-        <div class="manage">
-            <i class="fas fa-poll fa-3x"></i>
-            <p>faster return system</p>
-        </div>
-    </section>
 
 
     <!-------------------------platform-------------------------->
-    <section class="platform">
-        <div class="left">
-            <img src="images/img1.png" alt="image" class="img1">
-        </div>
-
-        <div class="right">
-            <h1>Save Your Time & See How It works any platform</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
-            <div class="sidebar">
-                <div class="leftside">
-                    <i class="fas fa-hand-holding-usd fa-3x"></i>
-                    <p>process title</p>
-                    <i class="fas fa-circle fa-3x red"></i>
+    <section class="platform" id="aboutUs">
+        <div class="container">
+            <div class="know-platform">
+                <div class="left">
+                    <img src="images/img1.png" alt="image" class="img1">
                 </div>
-                <div class="rightside">
-                    <i class="fas fa-vihara fa-3x"></i>
-                    <p>recipent</p>
-                    <i class="fas fa-circle fa-3x green"></i>
+                <div class="right">
+                    <h1>Save Your Time & See How It works any platform</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout.</p>
+                    <div class="sidebar">
+                        <div class="leftside">
+                            <i class="fas fa-hand-holding-usd fa-3x"></i>
+                            <p>process title</p>
+                            <i class="fas fa-circle fa-3x red"></i>
+                        </div>
+                        <div class="rightside">
+                            <i class="fas fa-vihara fa-3x"></i>
+                            <p>recipent</p>
+                            <i class="fas fa-circle fa-3x green"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,80 +161,91 @@
 
 
     <!-----------------------------join---------------------->
-    <section class="join">
-        <div class="left-sidebar">
-            <h1>Join our global community and get access</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
-            <div class="top">
-                <div class="bottom">
-                    <i class="fas fa-calendar-alt fa-3x"></i>
-                    <div class="card">
-                        <h1>Virtual card</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <section class="join" id="portfolio">
+        <div class="container">
+            <div class="join-hub">
+                <div class="left-sidebar">
+                    <h1>Join our global community and get access</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout.</p>
+                    <div class="top">
+                        <div class="bottom">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="card">
+                                <h1>Virtual card</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="card">
+                                <h1>Buyer Protection</h1>
+                                <p>There are many variations of passages of Lorem Ipsum available.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="bottom">
-                    <i class="fas fa-calendar-alt fa-3x"></i>
-                    <div class="card">
-                        <h1>Buyer Protection</h1>
-                        <p>There are many variations of passages of Lorem Ipsum available.</p>
-                    </div>
+                <div class="right-sidebar">
+                    <img src="images/img3.png" alt="image">
                 </div>
             </div>
-        </div>
-        <div class="right-sidebar">
-            <img src="images/img3.png" alt="image" class="img2">
         </div>
     </section>
     <!-------------------------------service------------------------>
-    <section class="service">
-        <h1 class="popular">popular service</h1>
-        <p class="center">It is a long established fact that a reader will be distracted by the readable content of a
-            page when looking at its layout.</p>
-        <div class="invoices">
-            <div class="detailed">
-                <i class="fas fa-envelope-open-text fa-3x"></i>
-                <h2>invoices</h2>
-                <p>It is a long established fact that a reader will be distracted.</p>
-            </div>
-            <div class="detailed">
-                <i class="fas fa-envelope-open-text fa-3x"></i>
-                <h2>detailed report</h2>
-                <p>It is a long established fact that a reader will be distracted.</p>
-            </div>
-            <div class="detailed">
-                <i class="fas fa-envelope-open-text fa-3x"></i>
-                <h2>management</h2>
-                <p>It is a long established fact that a reader will be distracted.</p>
-            </div>
-            <div class="detailed">
-                <i class="fas fa-envelope-open-text fa-3x"></i>
-                <h2>secure backup</h2>
-                <p>It is a long established fact that a reader will be distracted.</p>
+    <section class="service" id="service">
+        <div class="container">
+            <div class="service-detailed">
+                <h1>popular service</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a
+                    page when looking at its layout.</p>
+                <div class="invoices">
+                    <div class="detailed">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h2>invoices</h2>
+                        <p>It is a long established fact that a reader will be distracted.</p>
+                    </div>
+                    <div class="detailed">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h2>detailed report</h2>
+                        <p>It is a long established fact that a reader will be distracted.</p>
+                    </div>
+                    <div class="detailed">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h2>management</h2>
+                        <p>It is a long established fact that a reader will be distracted.</p>
+                    </div>
+                    <div class="detailed">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h2>secure backup</h2>
+                        <p>It is a long established fact that a reader will be distracted.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!---------------------------business---------------------------->
-    <section class="business">
-        <div class="col1">
-            <img src="images/img4.png" alt="image">
-        </div>
-        <div class="col2">
-            <h1>Popular features that your business needs</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.</p>
-            <div class="flow">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. Distracted by the readable content of a page.</p>
-            </div>
-            <div class="ceo">
-                <img src="images/img5.jpg" alt="image" class="img5">
-                <div>
-                    <h1>Kips Leo</h1>
-                    <p>CEO, Company</p>
+    <section class="business" id="blog">
+        <div class="container">
+            <div class="business-blog">
+                <div class="col1">
+                    <img src="images/img4.png" alt="image">
+                </div>
+                <div class="col2">
+                    <h1>Popular features that your business needs</h1>
+                    <p>It is a long established fact that a <br>reader will be distracted by the <br>readable content of a page when<br> looking at its layout.</p>
+                    <div class="flow">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                            looking at its layout. Distracted by the readable content of a page.</p>
+                    </div>
+                    <div class="ceo">
+                        <img src="images/img5.jpg" alt="image">
+                        <div>
+                            <h1>Kips Leo</h1>
+                            <p>CEO, Company</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -210,52 +254,60 @@
 
     <!------------------------------footer-------------------->
     <section class="footer">
-        <div class="underline">
-            <div class="us">
-                <img src="images/logo.png" alt="image">
-                <p>Subscribe our newsletter and get 10% off your first purchase.</p>
-            </div>
-            <div class="us">
-                <h1>information</h1>
-                <ul>
-                    <li>home</li>
-                    <li>blog</li>
-                    <li>careers</li>
-                    <li>pricing</li>
-                    <li>contact us</li>
-                </ul>
-            </div>
-            <div class="us">
-                <h1>about us</h1>
-                <ul>
-                    <li>home</li>
-                    <li>blog</li>
-                    <li>careers</li>
-                    <li>pricing</li>
-                    <li>contact us</li>
-                </ul>
-            </div>
-            <div class="us">
-                <h1>quick links</h1>
-                <div class="link">
-                    <i class="fas fa-phone-alt fa-2x"></i>
-                    <p>0123456789</p>
+        <div class="container">
+            <div class="underline">
+                <div class="us">
+                    <a href="javascript:void(0)"><img src="images/logo.png" alt="image"></a>
+                    <p>Subscribe our newsletter and get 10% off your first purchase.</p>
                 </div>
-                <div class="link">
-                    <i class="far fa-envelope fa-2x"></i>
-                    <p>suport@gmail.com</p>
+                <div class="us">
+                    <h1>information</h1>
+                    <ul>
+                        <li><a href="javascript:void(0)">home</a></li>
+                        <li><a href="javascript:void(0)">blog</a></li>
+                        <li><a href="javascript:void(0)">careers</a></li>
+                        <li><a href="javascript:void(0)">pricing</a></li>
+                        <li><a href="javascript:void(0)">contact us</a></li>
+                    </ul>
                 </div>
-                <div class="link">
-                    <i class="fas fa-home fa-2x"></i>
-                    <p>1234 North Avenu Luck Len</p>
+                <div class="us">
+                    <h1>about us</h1>
+                    <ul>
+                        <li><a href="javascript:void(0)">home</a></li>
+                        <li><a href="javascript:void(0)">blog</a></li>
+                        <li><a href="javascript:void(0)">careers</a></li>
+                        <li><a href="javascript:void(0)">pricing</a></li>
+                        <li><a href="javascript:void(0)">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="us">
+                    <h1>quick links</h1>
+                    <div class="link">
+                        <a href="javascript:void(0)"><i class="fas fa-phone-alt"></i></a>
+                        <p>0123456789</p>
+                    </div>
+                    <div class="link">
+                        <a href="javascript:void(0)"><i class="far fa-envelope"></i></a>
+                        <p>suport@gmail.com</p>
+                    </div>
+                    <div class="link">
+                        <a href="javascript:void(0)"><i class="fas fa-home"></i></a>
+                        <p>1234 North Avenu Luck Len</p>
+                    </div>
                 </div>
             </div>
         </div>
         <hr>
-        <p class="copyright">Copyright 2021 safbox All Rights Reserved.</p>
+        <div class="container">
+            <p class="copyright">Copyright &copy; 2021 safbox All Rights Reserved.</p>
+        </div>
     </section>
 
+    <!-- scrollTop -->
+    <button class="btnScrollTop"><i class="fas fa-angle-double-up"></i></button>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
